@@ -2936,7 +2936,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: clamp(14px, 1.5vw, 20px);
+  gap: clamp(24px, 2vw, 28px);
   justify-self: end;
   transform: none;
 }
@@ -2994,7 +2994,7 @@ img {
     --thank-title-size: 60px;
     --thank-hand-size: 36px;
     --thank-copy-size: 15px;
-    --thank-qr-size: clamp(220px, 24vw, 260px);
+    --thank-qr-size: clamp(220px, 20vw, 240px);
     --thank-button-height: clamp(34px, 3.6vw, 40px);
   }
 
@@ -4073,6 +4073,28 @@ overflow: hidden;
 /* 仅放大 Brand Visual 中的 PANDA JOJO 项目 */
 .work-thumb-card[data-project-id="elf-sack"] {
   grid-column: 1 / -1;
-  width: min(100%, 960px);
+  width: min(100%, 760px);
   justify-self: center;
+}
+/* 首页首屏右侧文案与内容边界对齐 */
+@media (min-width: 901px) {
+  .ref-hero .ref-hero-side h2 {
+    text-align: right;
+  }
+}
+/* 首页首屏：导航菜单右对齐 */
+.ref-hero > .ref-nav nav {
+  justify-content: flex-end;
+}
+
+/* 首页首屏：两个按钮右对齐 */
+.ref-hero .ref-actions {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* 隐藏右下角悬浮的 Edit 按钮 */
+.edit-entry {
+  display: none !important;
 }
