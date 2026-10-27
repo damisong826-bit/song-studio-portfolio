@@ -1,296 +1,3374 @@
 window.SONG_STUDIO_DATA = {
-  version: "2026-06-29-editor-prototype",
-  settings: {
-    brandName: "Song Studio",
-    email: "hello@songstudio.com",
-    copyright: "© 2024 Song Studio. All rights reserved.",
-    colors: {
-      background: "#f4f5f1",
-      ink: "#0d1110",
-      accent: "#1774ff",
-      darkPanel: "#080908"
+  "version": "2026-06-29-editor-prototype",
+  "settings": {
+    "brandName": "Song Studio",
+    "email": "851062151@qq.com",
+    "copyright": "© 2024 Song Studio. All rights reserved.",
+    "colors": {
+      "background": "#f4f5f1",
+      "ink": "#0d1110",
+      "accent": "#1774ff",
+      "darkPanel": "#080908"
     },
-    layout: {
-      containerWidth: "1220px",
-      heroContainerWidth: "1220px",
-      sectionSpacingSmall: 64,
-      sectionSpacingMedium: 88,
-      sectionSpacingLarge: 112,
-      imageRadius: 28,
-      buttonRadius: 999
+    "layout": {
+      "containerWidth": "1220px",
+      "heroContainerWidth": "1220px",
+      "sectionSpacingSmall": 64,
+      "sectionSpacingMedium": 88,
+      "sectionSpacingLarge": 112,
+      "imageRadius": 28,
+      "buttonRadius": 999
     },
-    typography: {
-      fontZh: {
-        name: "Noto Sans SC",
-        fileName: "",
-        source: "google"
+    "typography": {
+      "fontZh": {
+        "name": "Noto Sans SC",
+        "fileName": "",
+        "source": "google"
       },
-      fontEn: {
-        name: "Inter",
-        fileName: "",
-        source: "google"
+      "fontEn": {
+        "name": "Inter",
+        "fileName": "",
+        "source": "google"
       },
-      fontHandwriting: {
-        name: "Brush Script MT",
-        fileName: "",
-        source: "system"
+      "fontHandwriting": {
+        "name": "Brush Script MT",
+        "fileName": "",
+        "source": "system"
       },
-      styles: {
-        h1En: { label: "H1 英文首屏标题", size: 94, weight: 560, lineHeight: 1.08, letterSpacing: 0 },
-        h2En: { label: "H2 英文模块标题", size: 64, weight: 520, lineHeight: 1.14, letterSpacing: 0 },
-        h3En: { label: "H3 英文分组标题", size: 42, weight: 540, lineHeight: 1.18, letterSpacing: 0 },
-        h4En: { label: "H4 英文卡片标题", size: 28, weight: 560, lineHeight: 1.24, letterSpacing: 0 },
-        leadEn: { label: "英文导语", size: 27, weight: 400, lineHeight: 1.4, letterSpacing: 0 },
-        bodyEn: { label: "英文正文", size: 17, weight: 500, lineHeight: 1.62, letterSpacing: 0 },
-        metaEn: { label: "英文标签/编号", size: 15, weight: 650, lineHeight: 1.35, letterSpacing: 0 },
-        buttonEn: { label: "英文按钮", size: 14, weight: 650, lineHeight: 1, letterSpacing: 0 },
-        h1Zh: { label: "H1 中文详情标题", size: 72, weight: 500, lineHeight: 1.02, letterSpacing: 0 },
-        h2Zh: { label: "H2 中文段落标题", size: 38, weight: 500, lineHeight: 1.16, letterSpacing: 0 },
-        h3Zh: { label: "H3 中文项目标题", size: 28, weight: 560, lineHeight: 1.18, letterSpacing: 0 },
-        h4Zh: { label: "H4 中文小标题", size: 20, weight: 560, lineHeight: 1.3, letterSpacing: 0 },
-        bodyZh: { label: "中文正文", size: 16, weight: 500, lineHeight: 1.72, letterSpacing: 0 },
-        captionZh: { label: "中文说明/注释", size: 14, weight: 500, lineHeight: 1.55, letterSpacing: 0 }
+      "styles": {
+        "h1En": {
+          "label": "H1 英文首屏标题",
+          "size": 94,
+          "weight": 600,
+          "lineHeight": 1.08,
+          "letterSpacing": 0
+        },
+        "h2En": {
+          "label": "H2 英文模块标题",
+          "size": 44,
+          "weight": 500,
+          "lineHeight": 1.14,
+          "letterSpacing": 0
+        },
+        "h3En": {
+          "label": "H3 英文分组标题",
+          "size": 42,
+          "weight": 500,
+          "lineHeight": 1.18,
+          "letterSpacing": 0
+        },
+        "h4En": {
+          "label": "H4 英文卡片标题",
+          "size": 28,
+          "weight": 600,
+          "lineHeight": 1.24,
+          "letterSpacing": 0
+        },
+        "leadEn": {
+          "label": "英文导语",
+          "size": 27,
+          "weight": 400,
+          "lineHeight": 1.4,
+          "letterSpacing": 0
+        },
+        "bodyEn": {
+          "label": "英文正文",
+          "size": 17,
+          "weight": 500,
+          "lineHeight": 1.62,
+          "letterSpacing": 0
+        },
+        "metaEn": {
+          "label": "英文标签/编号",
+          "size": 12,
+          "weight": 600,
+          "lineHeight": 1.35,
+          "letterSpacing": 0
+        },
+        "buttonEn": {
+          "label": "英文按钮",
+          "size": 14,
+          "weight": 600,
+          "lineHeight": 1,
+          "letterSpacing": 0
+        },
+        "h1Zh": {
+          "label": "H1 中文详情标题",
+          "size": 72,
+          "weight": 500,
+          "lineHeight": 1.02,
+          "letterSpacing": 0
+        },
+        "h2Zh": {
+          "label": "H2 中文段落标题",
+          "size": 38,
+          "weight": 500,
+          "lineHeight": 1.16,
+          "letterSpacing": 0
+        },
+        "h3Zh": {
+          "label": "H3 中文项目标题",
+          "size": 25,
+          "weight": 600,
+          "lineHeight": 1.18,
+          "letterSpacing": 0
+        },
+        "h4Zh": {
+          "label": "H4 中文小标题",
+          "size": 20,
+          "weight": 600,
+          "lineHeight": 1.3,
+          "letterSpacing": 0
+        },
+        "bodyZh": {
+          "label": "中文正文",
+          "size": 16,
+          "weight": 500,
+          "lineHeight": 1.72,
+          "letterSpacing": 0
+        },
+        "captionZh": {
+          "label": "中文说明/注释",
+          "size": 14,
+          "weight": 500,
+          "lineHeight": 1.55,
+          "letterSpacing": 0
+        }
+      },
+      "fontLibrary": [
+        {
+          "id": "font-zh-noto-sans-sc",
+          "name": "Noto Sans SC",
+          "fileName": "",
+          "source": "google",
+          "group": "zh",
+          "dataUrl": ""
+        },
+        {
+          "id": "font-en-inter",
+          "name": "Inter",
+          "fileName": "",
+          "source": "google",
+          "group": "en",
+          "dataUrl": ""
+        },
+        {
+          "id": "font-handwriting-brush-script-mt",
+          "name": "Brush Script MT",
+          "fileName": "",
+          "source": "system",
+          "group": "handwriting",
+          "dataUrl": ""
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "items": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "index.html",
+        "visible": true,
+        "sortOrder": 1
+      },
+      {
+        "id": "project",
+        "label": "Project",
+        "href": "#works",
+        "badge": "03",
+        "visible": true,
+        "sortOrder": 2
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "href": "#contact",
+        "visible": true,
+        "sortOrder": 3
       }
-    }
-  },
-  navigation: {
-    items: [
-      { id: "home", label: "Home", href: "index.html", visible: true, sortOrder: 1 },
-      { id: "project", label: "Project", href: "#works", badge: "03", visible: true, sortOrder: 2 },
-      { id: "contact", label: "Contact", href: "#contact", visible: true, sortOrder: 3 }
     ],
-    introButton: {
-      label: "Contact Me ↗",
-      href: "#contact",
-      image: "assets/images/live-妖精/1.jpg",
-      visible: true
+    "introButton": {
+      "label": "Contact Me ↗",
+      "href": "#contact",
+      "image": "assets/images/live-妖精/1.jpg",
+      "visible": true
     }
   },
-  home: {
-    hero: {
-      visible: true,
-      label: "Brand Visual Portfolio",
-      title: "Visual Design for Live Brands.",
-      sideTitle: "Live Visual\nBrand Campaign\nfor Commerce Scenes",
-      primaryButton: { label: "View Works ↗", href: "#works" },
-      secondaryButton: { label: "Reach Out ↗", href: "#contact" },
-      bottomLabels: ["+ Define", "+ Design", "+ Development"],
-      backgroundImage: "assets/images/首- BJ/蓝色首屏留白版.png",
-      backgroundPosition: "center"
+  "home": {
+    "hero": {
+      "visible": true,
+      "label": "Visual Design Portfolio",
+      "title": "Design that \nBrings Ideas\ninto Focus.",
+      "sideTitle": "Live Visual\nBrand Campaign\nDigital Experiences",
+      "primaryButton": {
+        "label": "More Works ↗",
+        "href": "#works"
+      },
+      "secondaryButton": {
+        "label": "Wechat ↗",
+        "href": "#contact"
+      },
+      "bottomLabels": [
+        "+ Concept",
+        "+ Design",
+        "+ Execution"
+      ],
+      "backgroundImage": "assets/images/首- BJ/蓝色首屏留白版.png",
+      "backgroundPosition": "center"
     },
-    logoShowcase: {
-      visible: true,
-      description: "Selected partners, platforms and visual directions",
-      items: [
-        { id: "gao", label: "GAO", image: "", visible: true, sortOrder: 1 },
-        { id: "panda-jojo", label: "PANDA JOJO", image: "", visible: true, sortOrder: 2 },
-        { id: "type-lab", label: "TYPE LAB", image: "", visible: true, sortOrder: 3 },
-        { id: "live-visual", label: "LIVE VISUAL", image: "", visible: true, sortOrder: 4 },
-        { id: "brand-campaign", label: "BRAND CAMPAIGN", image: "", visible: true, sortOrder: 5 },
-        { id: "digital-content", label: "DIGITAL CONTENT", image: "", visible: true, sortOrder: 6 },
-        { id: "song-studio", label: "SONG STUDIO", image: "", visible: true, sortOrder: 7 }
+    "logoShowcase": {
+      "visible": true,
+      "description": "Selected partners, platforms and visual directions",
+      "items": [
+        {
+          "id": "gao",
+          "label": "CITRINE",
+          "image": "",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "id": "panda-jojo",
+          "label": "PANDA JOJO",
+          "image": "",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "id": "type-lab",
+          "label": "CHAPANDA",
+          "image": "",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "id": "live-visual",
+          "label": "UR",
+          "image": "",
+          "visible": true,
+          "sortOrder": 4
+        },
+        {
+          "id": "brand-campaign",
+          "label": "妖精的口袋",
+          "image": "",
+          "visible": true,
+          "sortOrder": 5
+        },
+        {
+          "id": "digital-content",
+          "label": "KOL",
+          "image": "",
+          "visible": true,
+          "sortOrder": 6
+        },
+        {
+          "id": "song-studio",
+          "label": "",
+          "image": "",
+          "visible": true,
+          "sortOrder": 7
+        }
       ]
     },
-    featuredCarousel: {
-      visible: true,
-      label: "Selected Projects",
-      title: "We build visual-first digital stories for live commerce.",
-      description: "精选视觉项目，覆盖品牌视觉、直播内容、活动传播与版式实验。",
-      autoplay: true,
-      autoplayDirection: "left-to-right",
-      autoplaySpeed: 4200,
-      projectIds: ["elf-sack", "gao-live", "gao-summer"]
-    },
-    numbers: {
-      visible: true,
-      label: "Practice Focus",
-      title: "Selected directions shaped for fast-moving brand scenes.",
-      items: [
-        { value: "Brand", label: "Visual identity systems", visible: true, sortOrder: 1 },
-        { value: "Live", label: "Commerce visual content", visible: true, sortOrder: 2 },
-        { value: "Campaign", label: "Digital launch stories", visible: true, sortOrder: 3 },
+    "featuredCarousel": {
+      "visible": true,
+      "label": "Selected Projects",
+      "title": "A Collection of Creative Projects",
+      "description": "精选品牌视觉、平台内容与数字体验设计项目。",
+      "autoplay": true,
+      "autoplayDirection": "left-to-right",
+      "autoplaySpeed": 4200,
+      "projectIds": [
+        "elf-sack",
+        "gao-live",
+        "gao-summer"
       ]
     },
-    projectDirectory: {
-      visible: true,
-      label: "Design Directions",
-      previewTitle: "Live Visual",
-      previewDescription: "Visual systems for live commerce.",
-      descriptionStyle: { size: 17, weight: 600, lineHeight: 1.45, letterSpacing: 0 },
-      previewImage: "assets/images/live-钟薛高/1.jpg",
-      categoryIds: ["live-visual", "brand-visual", "digital-campaign"]
+    "numbers": {
+      "visible": true,
+      "label": "Practice Focus",
+      "title": "Visual design across brands, platforms and campaigns",
+      "items": [
+        {
+          "value": "Brand",
+          "label": "Brand identity & campaigns",
+          "visible": true,
+          "sortOrder": 1
+        },
+        {
+          "value": "Live",
+          "label": "Livestream & Creators",
+          "visible": true,
+          "sortOrder": 2
+        },
+        {
+          "value": "Campaign",
+          "label": "Campaigns & Influencers",
+          "visible": true,
+          "sortOrder": 3
+        },
+        {
+          "value": "Visual",
+          "label": "Product & Promotion",
+          "visible": true,
+          "sortOrder": 4
+        }
+      ]
     },
-    projectIndex: {
-      visible: true,
-      label: "Projects Index",
-      title: "Projects by Visual Direction",
-      intro: "按项目类型展示所有作品，点击分类可跳转到对应项目组，点击作品进入详情页。",
-      categoryIds: ["live-visual", "brand-visual", "digital-campaign"],
-      layout: "waterfall"
+    "projectDirectory": {
+      "visible": true,
+      "label": "Design Directions",
+      "previewTitle": "Live Visual",
+      "previewDescription": "Visual systems for live commerce.",
+      "descriptionStyle": {
+        "size": 17,
+        "weight": 600,
+        "lineHeight": 1.45,
+        "letterSpacing": 0
+      },
+      "previewImage": "assets/images/live-钟薛高/1.jpg",
+      "categoryIds": [
+        "live-visual",
+        "brand-visual",
+        "digital-campaign",
+        "typography-lab"
+      ]
     },
-    footerContact: {
-      visible: true,
-      label: "",
-      title: "Thank\nyou.",
-      description: "Let's connect for projects, collaborations,\nand visual storytelling.",
-      email: "hello@songstudio.com",
-      buttonLabel: "Back Home ↗",
-      buttonHref: "index.html",
-      handwritingText: "SONJ",
-      handwritingFont: "Brush Script MT",
-      backgroundImage: "assets/images/首- BJ/蓝色首屏留白版.png",
-      qrImage: "",
-      qrPlaceholder: true
+    "projectIndex": {
+      "visible": true,
+      "label": "Projects Index",
+      "title": "Projects by Visual Direction",
+      "intro": "按项目类型展示所有作品，点击分类可跳转到对应项目组，点击作品进入详情页。",
+      "categoryIds": [
+        "live-visual",
+        "brand-visual",
+        "digital-campaign",
+        "typography-lab"
+      ],
+      "layout": "waterfall"
+    },
+    "footerContact": {
+      "visible": true,
+      "label": "",
+      "title": "Thank you.",
+      "description": " ",
+      "email": "851062151@QQ.com",
+      "buttonLabel": "Home ↗",
+      "buttonHref": "index.html",
+      "handwritingText": " ",
+      "handwritingFont": "Brush Script MT",
+      "backgroundImage": "assets/images/人 IP/暗色全身办公版.png",
+      "qrImage": "assets/images/人 IP/01 .png",
+      "qrPlaceholder": true
     }
   },
-  codeDrafts: {
-    html: "",
-    css: "",
-    js: ""
+  "codeDrafts": {
+    "html": "",
+    "css": "",
+    "js": ""
   },
-  imageCrops: {},
-  categories: [
+  "imageCrops": {
+    "project:gao-live:thumbnailImage": {
+      "src": "assets/images/live-钟薛高/7.jpg",
+      "cropOffsetX": 16.72,
+      "cropOffsetY": 0,
+      "zoom": 0.84
+    },
+    "home.hero.backgroundImage": {
+      "src": "assets/images/首- BJ/蓝色首屏留白版.png",
+      "cropOffsetX": -0.44,
+      "cropOffsetY": 30.72,
+      "zoom": 1.63
+    },
+    "category:live-visual:coverImage": {
+      "src": "assets/images/live-钟薛高/7.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.3333
+    },
+    "category:brand-visual:coverImage": {
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -01.jpg",
+      "cropOffsetX": -15.85,
+      "cropOffsetY": 0,
+      "zoom": 1.33
+    },
+    "category:digital-campaign:coverImage": {
+      "src": "assets/images/电商-化妆品/1-1.jpg",
+      "cropOffsetX": -41,
+      "cropOffsetY": -2.24,
+      "zoom": 1.82
+    },
+    "project:project-1793031159197:thumbnailImage": {
+      "src": "assets/images/live-chabaidao/1 拷贝 2.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 0.85
+    },
+    "project:project-1793032627241:thumbnailImage": {
+      "src": "assets/images/live-妖精/3 拷贝.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 0.85
+    },
+    "project:project-1793032627241:coverImage": {
+      "src": "assets/images/live-妖精/1.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.04
+    },
+    "project:elf-sack:thumbnailImage": {
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -19.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 0.87
+    },
+    "project:elf-sack:coverImage": {
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -20.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.0001
+    },
+    "project:gao-summer:thumbnailImage": {
+      "src": "assets/images/DC-云南白药/缩略图.png",
+      "cropOffsetX": 1.98,
+      "cropOffsetY": 2.31,
+      "zoom": 1.33
+    },
+    "project:gao-summer:coverImage": {
+      "src": "assets/images/DC-云南白药/封面.png",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.3334
+    },
+    "project:project-1793034930650:thumbnailImage": {
+      "src": "assets/images/电商-化妆品/1-1.jpg",
+      "cropOffsetX": -18.9,
+      "cropOffsetY": 0.32,
+      "zoom": 0.85
+    },
+    "project:project-1793035950900:thumbnailImage": {
+      "src": "assets/images/电商-化妆品/2-1.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 0.87
+    },
+    "project:project-1793036396231:thumbnailImage": {
+      "src": "assets/images/营销-红人/首图.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 0.86
+    },
+    "project:project-1793036396231:coverImage": {
+      "src": "assets/images/营销-红人/Marketing Visuals 1.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.0008
+    },
+    "project:project-1793036540292:coverImage": {
+      "src": "assets/images/live-zunbao/25- 作品集-22.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.0001
+    },
+    "project:project-1793036692584:thumbnailImage": {
+      "src": "assets/images/营销-长图/首图.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 0.85
+    },
+    "project:project-1793036692584:coverImage": {
+      "src": "assets/images/营销-长图/Marketing Visuals.jpg",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.0008
+    },
+    "home.footerContact.qrImage": {
+      "src": "assets/images/人 IP/01 .png",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.27
+    },
+    "home.footerContact.backgroundImage": {
+      "src": "assets/images/人 IP/暗色全身办公版.png",
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1.1994
+    }
+  },
+  "categories": [
     {
-      id: "live-visual",
-      name: "Live Visual",
-      nameZh: "直播视觉",
-      anchor: "projects-live-visual",
-      shortDescription: "舞台视觉 / 实时内容",
-      longDescription: "Visual systems for live commerce scenes, launch moments, and fast content production.",
-      coverImage: "assets/images/live-钟薛高/1.jpg",
-      visible: true,
-      sortOrder: 1
+      "id": "live-visual",
+      "name": "Live Visual",
+      "nameZh": "直播视觉",
+      "anchor": "projects-live-visual",
+      "shortDescription": "直播视觉",
+      "longDescription": "Visual systems for live commerce scenes, launch moments, and fast content production.",
+      "coverImage": "assets/images/live-钟薛高/7.jpg",
+      "visible": true,
+      "sortOrder": 1,
+      "number": "01",
+      "rightTitle": "直播与内容",
+      "rightDescription": "本地生活与服饰等品牌的直播间视觉，包括直播场景、产品贴片、预告海报及活动视觉，呈现不同直播场景下的视觉设计实践。",
+      "indexDescription": "让品牌走进直播现场，以场景、图形与动态视觉，构建更具感染力的内容表达"
     },
     {
-      id: "brand-visual",
-      name: "Brand Visual",
-      nameZh: "品牌视觉",
-      anchor: "projects-brand-visual",
-      shortDescription: "品牌识别 / 场景视觉",
-      longDescription: "Identity-led visual stories for brand moments, product launches, and campaign systems.",
-      coverImage: "assets/images/live-妖精/1.jpg",
-      visible: true,
-      sortOrder: 2
+      "id": "brand-visual",
+      "name": "Brand Visual",
+      "nameZh": "品牌视觉",
+      "anchor": "projects-brand-visual",
+      "shortDescription": "品牌识别 / 场景视觉",
+      "longDescription": "Identity-led visual stories for brand moments, product launches, and campaign systems.",
+      "coverImage": "assets/images/Brand-pandajojo/pandajojo 2  -01.jpg",
+      "visible": true,
+      "sortOrder": 2,
+      "number": "02",
+      "rightTitle": "品牌的表达",
+      "rightDescription": "以品牌为核心，围绕品牌定位与风格展开视觉设计，呈现品牌形象塑造及相关视觉应用。",
+      "indexDescription": "捕捉品牌独有的气质与个性，将品牌理念转化为鲜明而有辨识度的视觉形象"
     },
     {
-      id: "digital-campaign",
-      name: "Digital Campaign",
-      nameZh: "营销活动视觉",
-      anchor: "projects-digital-campaign",
-      shortDescription: "内容传播 / 活动视觉",
-      longDescription: "Campaign visuals for seasonal stories, social content, and digital launch pages.",
-      coverImage: "assets/images/电商-化妆品/0.jpg",
-      visible: true,
-      sortOrder: 3
+      "id": "digital-campaign",
+      "name": "Digital Campaign",
+      "nameZh": "营销活动视觉",
+      "anchor": "projects-digital-campaign",
+      "shortDescription": "内容传播 / 活动视觉",
+      "longDescription": "Campaign visuals for seasonal stories, social content, and digital launch pages.",
+      "coverImage": "assets/images/电商-化妆品/1-1.jpg",
+      "visible": true,
+      "sortOrder": 3,
+      "number": "03",
+      "rightTitle": "电商营销&KOL视觉",
+      "rightDescription": "电商｜营销｜活动推广及新媒体运营视觉，包括 KOL 合作、红人内容与营销活动物料，展现多元商业场景下的视觉表达。",
+      "indexDescription": "让创意进入真实的商业场景，以多元视觉连接产品、内容与用户"
     },
+    {
+      "id": "typography-lab",
+      "name": "Typography Lab",
+      "nameZh": "字体实验",
+      "anchor": "projects-typography-lab",
+      "shortDescription": "字体设计 / 版式表达",
+      "longDescription": "Type-led experiments for posters, editorial systems, and graphic identity details.",
+      "coverImage": "assets/images/Brand-pandajojo/11.jpg",
+      "visible": true,
+      "sortOrder": 4,
+      "number": "04",
+      "rightTitle": "Typography Lab",
+      "rightDescription": "Type-led experiments for posters, editorial systems, and graphic identity details."
+    }
   ],
-  projects: [
+  "projects": [
     {
-      id: "gao-live",
-      slug: "gao-live",
-      title: "钟薛高",
-      titleEn: "GAO Live",
-      summary: "品牌直播视觉与现场内容设计。",
-      categoryId: "live-visual",
-      year: "2025",
-      timeline: "2 Month",
-      client: "GAO",
-      services: "Live Visual",
-      visible: true,
-      featuredOnHome: true,
-      showInIndex: true,
-      carouselSortOrder: 2,
-      categorySortOrder: 1,
-      coverImage: "assets/images/live-钟薛高/1.jpg",
-      thumbnailImage: "assets/images/live-钟薛高/1.jpg",
-      objectPosition: "center",
-      detailTheme: "light",
-      detailIntro: "品牌直播视觉与现场内容设计。",
-      detailSections: [
-        { label: "Design Background", title: "把直播信息整理成高识别度视觉入口。", body: "通过统一信息层级和移动端内容模块，让直播间视觉在高频传播中保持品牌识别。" },
-        { label: "Design Solution", title: "用可复用模块承载不同销售场景。", body: "主图、信息卡、活动贴纸和手机界面可以持续替换，让不同场景快速延展。" }
+      "id": "gao-live",
+      "slug": "gao-live",
+      "title": "钟薛高",
+      "titleEn": "GAO Live",
+      "summary": "品牌直播视觉与现场内容设计。",
+      "categoryId": "live-visual",
+      "year": "把夏日灵感，装进每一帧",
+      "timeline": "2 Month",
+      "client": "GAO",
+      "services": "Live Visual",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 2,
+      "categorySortOrder": 1,
+      "coverImage": "assets/images/live-钟薛高/1.jpg",
+      "thumbnailImage": "assets/images/live-钟薛高/7.jpg",
+      "objectPosition": "center",
+      "detailTheme": "light",
+      "detailIntro": "品牌直播视觉与现场内容设计。",
+      "detailSections": [
+        {
+          "label": "Design Background",
+          "title": "以产品为主构建品牌视觉",
+          "body": "围绕产品本身的特点展开创意设计，融入年轻化的视觉语言与趣味性表达，在吸引用户注意的同时强化品牌识别。"
+        },
+        {
+          "label": "Design Solution",
+          "title": "视觉方案适配多元产品",
+          "body": "构建可复用的视觉组件与灵活的信息组合方式，使主视觉、活动信息与移动端内容能够按需延展，在保持整体风格统一的同时，提高不同场景下的视觉适配效率。"
+        }
       ],
-      detailImages: ["assets/images/live-钟薛高/1.jpg"],
-      stats: [
-        { value: "12+", label: "Live Assets" },
-        { value: "04", label: "Visual Directions" }
+      "detailImages": [
+        {
+          "src": "assets/images/live-钟薛高/1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/3.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/4.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/10月13日.mp4",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/7.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-钟薛高/8.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
       ],
-      relatedProjectIds: ["elf-sack", "gao-summer"]
+      "stats": [
+        {
+          "value": "12+",
+          "label": "Live Assets"
+        },
+        {
+          "value": "04",
+          "label": "Visual Directions"
+        }
+      ],
+      "relatedProjectIds": [
+        "elf-sack",
+        "gao-summer"
+      ],
+      "detailTitle": "钟薛高",
+      "heroMetaText": ""
     },
     {
-      id: "elf-sack",
-      slug: "elf-sack",
-      title: "妖精的口袋",
-      titleEn: "Elf Sack",
-      summary: "建立兼顾销售转化与品牌表达的直播视觉系统。",
-      categoryId: "brand-visual",
-      year: "2025",
-      timeline: "2 Month",
-      client: "PANDA / JOJO",
-      services: "Brand Visual",
-      visible: true,
-      featuredOnHome: true,
-      showInIndex: true,
-      carouselSortOrder: 1,
-      categorySortOrder: 1,
-      coverImage: "assets/images/live-妖精/1.jpg",
-      thumbnailImage: "assets/images/live-妖精/1.jpg",
-      objectPosition: "center",
-      detailTheme: "light",
-      detailIntro: "为少女服饰品牌建立兼顾直播转化、活动氛围与品牌记忆点的视觉系统。",
-      detailSections: [
-        { label: "Design Background", title: "把“促销信息”整理成有品牌表情的视觉叙事。", body: "直播间需要快速传达利益点，也需要维持品牌本身的少女感、趣味感和场景感。这个项目把日常直播、大促节点、节日活动拆成不同视觉层级，让信息更清晰，也让画面更像一个可持续使用的品牌系统。" },
-        { label: "Design Solution", title: "用统一的画面秩序承载不同活动内容。", body: "主视觉保留高识别度色彩和人物元素，通过标题、贴纸、信息卡和手机界面形成可复用的模块。后续不同上新或促销内容，只需要替换图片与信息，就能快速延展出完整的一组直播视觉。" }
+      "id": "elf-sack",
+      "slug": "elf-sack",
+      "title": "PANDA JOJO",
+      "titleEn": "Elf Sack",
+      "summary": "建立兼顾销售转化与品牌表达的直播视觉系统。",
+      "categoryId": "brand-visual",
+      "year": "让美，成为一种风格",
+      "timeline": "2 Month",
+      "client": "PANDA / JOJO",
+      "services": "Brand Visual",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 1,
+      "categorySortOrder": 1,
+      "coverImage": "assets/images/Brand-pandajojo/pandajojo 2  -20.jpg",
+      "thumbnailImage": "assets/images/Brand-pandajojo/pandajojo 2  -19.jpg",
+      "objectPosition": "center",
+      "detailTheme": "light",
+      "detailIntro": "为少女服饰品牌建立兼顾直播转化、活动氛围与品牌记忆点的视觉系统。",
+      "detailSections": [
+        {
+          "label": "PROJECT INTRO",
+          "title": "Brand Positioning",
+          "body": "以「让美触手可及」为核心理念，PANDA JOJO 以设计师款、持续上新与专业美甲服务构建品牌差异化优势。品牌面向年轻消费群体，将产品设计与时尚表达相结合，塑造兼具潮流属性、设计质感与专业度的快时尚美甲品牌形象。"
+        },
+        {
+          "label": "DESIGN APPROACH",
+          "title": "Design Approach",
+          "body": "基于品牌定位与产品特征，梳理品牌视觉表达的核心方向，将年轻化、时尚感与设计感转化为可延展的视觉语言。通过视觉手册建立统一的品牌规范，并将其应用于产品系列、主题海报、数字端界面及传播物料，形成贯穿品牌识别、产品呈现与营销传播的视觉体系；同时引入 AI 辅助设计，探索从视觉概念到场景化呈现的创作路径。"
+        },
+        {
+          "label": "VISUAL STRATEGY",
+          "title": "Brand Consistency × Campaign Flexibility",
+          "body": "建立\"品牌统一x运营差异化\"的双轨视觉策略。品牌层面保持简约时尚、克制且具有空间感的视觉基调,以留白与透气感建立稳定的品牌识别;运营层面则根据不同产品与活动主题灵活变化,让视觉拥有足够的新鲜感与表现力。最终形成统一的品牌底层与多元的主题表达。"
+        }
       ],
-      detailImages: [
-        "assets/images/live-妖精/1.jpg",
-        "assets/images/live-妖精/2.jpg",
-        "assets/images/live-妖精/3.jpg",
-        "assets/images/live-妖精/4.jpg",
-        "assets/images/live-妖精/5.jpg",
-        "assets/images/live-妖精/6.jpg",
-        "assets/images/live-妖精/7.jpg"
+      "detailImages": [
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -01.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -02.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -03.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -04.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -05.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -06.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -07.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -08.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -09.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -10.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -11.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -12.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -13.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -14.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -15.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -16.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -17.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/Brand-pandajojo/pandajojo 2  -18.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
       ],
-      stats: [
-        { value: "04", label: "Visual Directions" },
-        { value: "12+", label: "Live Assets" },
-        { value: "03", label: "Campaign Scenes" },
-        { value: "01", label: "Brand System" }
+      "stats": [
+        {
+          "value": "04",
+          "label": "Visual Directions"
+        },
+        {
+          "value": "12+",
+          "label": "Live Assets"
+        },
+        {
+          "value": "03",
+          "label": "Campaign Scenes"
+        },
+        {
+          "value": "01",
+          "label": "Brand System"
+        }
       ],
-      relatedProjectIds: ["gao-live", "type-echo"]
+      "relatedProjectIds": [
+        "gao-live"
+      ],
+      "detailTitle": "妖精的口袋",
+      "heroMetaText": ""
     },
     {
-      id: "gao-summer",
-      slug: "gao-summer",
-      title: "钟薛高",
-      titleEn: "GAO Summer",
-      summary: "夏日数字营销与移动端视觉内容。",
-      categoryId: "digital-campaign",
-      year: "2024",
-      timeline: "1 Month",
-      client: "GAO",
-      services: "Digital Campaign",
-      visible: true,
-      featuredOnHome: true,
-      showInIndex: true,
-      carouselSortOrder: 3,
-      categorySortOrder: 1,
-      coverImage: "assets/images/电商-化妆品/0.jpg",
-      thumbnailImage: "assets/images/电商-化妆品/0.jpg",
-      objectPosition: "center",
-      detailTheme: "light",
-      detailIntro: "夏日数字营销与移动端视觉内容。",
-      detailSections: [],
-      detailImages: ["assets/images/电商-化妆品/0.jpg"],
-      stats: [],
-      relatedProjectIds: ["gao-live", "elf-sack"]
+      "id": "gao-summer",
+      "slug": "gao-summer",
+      "title": "云南白药",
+      "titleEn": "GAO Summer",
+      "summary": "夏日数字营销与移动端视觉内容。",
+      "categoryId": "digital-campaign",
+      "year": "关于笑容的一场探索",
+      "timeline": "1 Month",
+      "client": "GAO",
+      "services": "Digital Campaign",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 3,
+      "categorySortOrder": 1,
+      "coverImage": "assets/images/DC-云南白药/封面.png",
+      "thumbnailImage": "assets/images/DC-云南白药/缩略图.png",
+      "objectPosition": "center",
+      "detailTheme": "light",
+      "detailIntro": "夏日数字营销与移动端视觉内容。",
+      "detailSections": [
+        {
+          "label": "Design Section",
+          "title": "从健康科普到趣味互动",
+          "body": "针对年轻群体的日常口腔健康问题，以趣味测试切入专业科普，降低健康知识的理解门槛，增强用户参与意愿。"
+        },
+        {
+          "label": "Design Section",
+          "title": "以答题交互传递个性化反馈",
+          "body": "通过递进式答题、结果解析与护理建议，构建完整的互动体验；结合品牌蓝、青绿色调与简洁的界面设计，平衡健康科普的专业性与年轻化的视觉表达。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/DC-云南白药/26- 作品集 M-49.webp",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/DC-云南白药/26- 作品集 M-50.webp",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/DC-云南白药/26- 作品集 M-51.webp",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/DC-云南白药/26- 作品集 M-66.webp",
+          "layout": "auto",
+          "displayMode": "natural"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [
+        "gao-live",
+        "elf-sack"
+      ],
+      "detailTitle": "钟薛高",
+      "heroMetaText": ""
     },
+    {
+      "id": "project-1793031159197",
+      "slug": "project-1793031159197",
+      "title": "茶百道",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "live-visual",
+      "year": "一杯入秋，趣味开场",
+      "timeline": "",
+      "client": "",
+      "services": "Live Visual",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 4,
+      "categorySortOrder": 2,
+      "thumbnailImage": "assets/images/live-chabaidao/1 拷贝 2.jpg",
+      "coverImage": "assets/images/live-chabaidao/1.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "Design Section",
+          "title": "让品牌视觉，在直播场景中自然延续",
+          "body": "立足茶百道的品牌基因与立秋主题，将季节氛围融入直播视觉表达，让品牌识别与活动情绪在不同触点中自然衔接。"
+        },
+        {
+          "label": "Design Section",
+          "title": "串联多元直播场景",
+          "body": "以主体相关元素构建核心视觉，并延展至绿幕、直播贴片等应用，让产品表达与场景氛围形成统一呼应。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/live-chabaidao/1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/3.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/4.jpg",
+          "layout": "wide",
+          "displayMode": "natural"
+        },
+        {
+          "src": "assets/images/live-chabaidao/2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/6.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/7.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/9.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/8.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-chabaidao/10.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "茶百道"
+    },
+    {
+      "id": "project-1793032627241",
+      "slug": "project-1793032627241",
+      "title": "妖精的口袋",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "live-visual",
+      "year": "让每次上新，都有点古怪",
+      "timeline": "",
+      "client": "",
+      "services": "Live Visual",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 5,
+      "categorySortOrder": 3,
+      "thumbnailImage": "assets/images/live-妖精/3 拷贝.jpg",
+      "coverImage": "assets/images/live-妖精/1.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "Design Section",
+          "title": "品牌个性融入营销视觉",
+          "body": "围绕品牌少女、鬼马的风格特征，将趣味化的视觉表达与直播促销信息相结合，在强化品牌辨识度的同时，兼顾活动氛围与信息传达。"
+        },
+        {
+          "label": "Design Section",
+          "title": "从产品特征出发，完成视觉语言转译",
+          "body": "提取产品元素，将其转化为相应的设计语言与场景氛围，使视觉主题与当期货品形成呼应，提升上新内容的辨识度与营销感染力。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/live-妖精/1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-妖精/3.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-妖精/images/2_01.jpg",
+          "layout": "auto",
+          "displayMode": "natural"
+        },
+        {
+          "src": "assets/images/live-妖精/images/2_02.jpg",
+          "layout": "auto",
+          "displayMode": "natural"
+        },
+        {
+          "src": "assets/images/live-妖精/images/2_03.jpg",
+          "layout": "auto",
+          "displayMode": "natural"
+        },
+        {
+          "src": "assets/images/live-妖精/4.jpg",
+          "layout": "auto",
+          "displayMode": "natural"
+        },
+        {
+          "src": "assets/images/live-妖精/5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-妖精/7.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-妖精/6.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "新项目"
+    },
+    {
+      "id": "project-1793034930650",
+      "slug": "project-1793034930650",
+      "title": "春汀CITRINE",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "digital-campaign",
+      "year": "12.12 Campaign",
+      "timeline": "",
+      "client": "",
+      "services": "Digital Campaign",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 6,
+      "categorySortOrder": 2,
+      "thumbnailImage": "assets/images/电商-化妆品/1-1.jpg",
+      "coverImage": "assets/images/电商-化妆品/1-1.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "CITRINE 春汀",
+          "title": "双12整合营销视觉",
+          "body": "围绕双12营销节点，为 CITRINE 春汀打造覆盖多平台的整合电商视觉，在满足双12营销氛围与促销需求的同时，避免传统大促视觉对品牌原有高级、简约调性的破坏。"
+        },
+        {
+          "label": "Design Section",
+          "title": "品牌语言重构节庆表达",
+          "body": "以品牌基因为基础，将节庆氛围转化为更具品牌辨识度的视觉表达。\n延续品牌棕米色系与克制的视觉语言，以礼赠叙事、产品聚焦和柔和光影营造节庆氛围，并将核心 KV 延展至不同营销模块，建立统一的活动视觉体系。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/电商-化妆品/1-1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/1-2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/1-3.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/1-4.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/1-5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/1-6.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-8.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "新项目"
+    },
+    {
+      "id": "project-1793035950900",
+      "slug": "project-1793035950900",
+      "title": "BOJ",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "digital-campaign",
+      "year": "Product Visual Design",
+      "timeline": "",
+      "client": "",
+      "services": "Digital Campaign",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 7,
+      "categorySortOrder": 3,
+      "thumbnailImage": "assets/images/电商-化妆品/2-1.jpg",
+      "coverImage": "assets/images/电商-化妆品/2-1.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "Design Section",
+          "title": "信息到体验",
+          "body": "围绕防晒产品的电商传播需求，构建涵盖产品卖点、成分功效、科研数据与使用体验的详情页视觉。面对密集且偏理性的产品信息，设计需要在清晰传达核心卖点的同时，突出产品的质地差异与使用感受，建立清透、专业且值得信赖的产品形象。"
+        },
+        {
+          "label": "Design Section",
+          "title": "专业化视觉表达",
+          "body": " 以清透的视觉基调为基础，将产品信息与使用体验转化为直观的视觉语言。 通过成分与数据可视化提升信息的可读性，结合差异化材质、质感与光影呈现两款产品的不同肤感，并借助 AI 辅助探索多元视觉表现，强化产品特征的传达。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/电商-化妆品/2-8.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-3.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-4.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-6.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/2-7.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/电商-化妆品/0.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "BOJ"
+    },
+    {
+      "id": "project-1793036396231",
+      "slug": "project-1793036396231",
+      "title": "KOL营销视觉",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "digital-campaign",
+      "year": "让内容形成影响力",
+      "timeline": "",
+      "client": "",
+      "services": "Digital Campaign",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 8,
+      "categorySortOrder": 4,
+      "thumbnailImage": "assets/images/营销-红人/首图.jpg",
+      "coverImage": "assets/images/营销-红人/Marketing Visuals 1.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "Design Background",
+          "title": "传播需求与视觉定位",
+          "body": "围绕红人合作与社交媒体传播需求，通过人物内容与品牌信息的视觉整合，提升营销内容的辨识度与传播表现力。"
+        },
+        {
+          "label": "Design Strategy",
+          "title": "人物叙事与视觉构建",
+          "body": "以人物影像建立视觉焦点，结合社媒编辑式排版与结构化信息层级，构建兼具人物张力、品牌识别与内容传播属性的营销视觉体系。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/营销-红人/Marketing Visuals 1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/蓝色 招商 拷贝.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/蓝色 招商.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/曲岑今益堂.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/张-1.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/张-2 拷贝 2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/张-2 拷贝.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/张-2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-红人/Marketing Visuals 1 拷贝.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "新项目"
+    },
+    {
+      "id": "project-1793036540292",
+      "slug": "project-1793036540292",
+      "title": "本地生活",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "live-visual",
+      "year": "让日常消费更有画面感",
+      "timeline": "",
+      "client": "",
+      "services": "Live Visual",
+      "visible": true,
+      "featuredOnHome": false,
+      "showInIndex": true,
+      "carouselSortOrder": 9,
+      "categorySortOrder": 4,
+      "thumbnailImage": "assets/images/0.jpg",
+      "coverImage": "assets/images/live-zunbao/25- 作品集-22.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "Design Background",
+          "title": "围绕品牌，打造差异",
+          "body": "针对餐饮、饮品等不同品类的直播需求，结合品牌特色、产品属性与营销主题，探索适配不同消费场景的视觉表达，在提升直播间氛围的同时，强化品牌识别与产品展示。"
+        },
+        {
+          "label": "Design Solution",
+          "title": "以主题化设计串联场景与内容",
+          "body": "根据不同品牌的产品特征与活动主题，构建相应的直播视觉场景。尊宝披萨围绕节日营销与产品推广，运用主题化画面、实景搭建及周播绿幕视觉，营造多元的直播氛围；\n农夫山泉则结合新春主题，通过 Blender 三维建模构建场景，并延展贴片元素，形成统一的节日视觉表达。."
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/live-zunbao/25- 作品集-22.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-zunbao/25- 作品集-23.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-zunbao/25- 作品集-24.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-zunbao/25- 作品集-25.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/live-zunbao/25- 作品集-26.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "本地生活"
+    },
+    {
+      "id": "project-1793036692584",
+      "slug": "project-1793036692584",
+      "title": "营销企划",
+      "titleEn": "New Project",
+      "summary": "项目简介",
+      "categoryId": "digital-campaign",
+      "year": "让营销内容更具吸引力",
+      "timeline": "",
+      "client": "",
+      "services": "Digital Campaign",
+      "visible": true,
+      "featuredOnHome": true,
+      "showInIndex": true,
+      "carouselSortOrder": 10,
+      "categorySortOrder": 5,
+      "thumbnailImage": "assets/images/营销-长图/首图.jpg",
+      "coverImage": "assets/images/营销-长图/Marketing Visuals.jpg",
+      "detailTheme": "light",
+      "heroMetaText": "",
+      "detailIntro": "",
+      "detailSections": [
+        {
+          "label": "Design Section",
+          "title": "内容触达",
+          "body": "涵盖珠宝、服饰、医美、餐饮等多个领域的品牌活动，围绕不同的品牌调性与营销主题，探索多元化的视觉表达方式。"
+        },
+        {
+          "label": "Design Section",
+          "title": "差异化视觉",
+          "body": "基于品牌属性与活动主题，灵活运用视觉语言、版式结构与场景氛围的差异化设计，建立契合品牌定位的视觉表达，兼顾风格多样性与品牌辨识度。"
+        }
+      ],
+      "detailImages": [
+        {
+          "src": "assets/images/营销-长图/Marketing Visuals.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/2 拷贝 2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/2 拷贝 3.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/2 拷贝 4.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/2 拷贝 5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/2 拷贝.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/2.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/5.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        },
+        {
+          "src": "assets/images/营销-长图/Marketing Visuals 拷贝.jpg",
+          "layout": "auto",
+          "displayMode": "fixed16x9"
+        }
+      ],
+      "stats": [],
+      "relatedProjectIds": [],
+      "detailTitle": "新项目"
+    }
   ],
-  assets: [
-    { id: "home-hero-clean", label: "首页/尾屏背景", src: "assets/images/首- BJ/蓝色首屏留白版.png", type: "image", recommendedRatio: "16:9", objectPosition: "center", sortOrder: 1 },
-    { id: "featured-brand", label: "妖精的口袋缩略图", src: "assets/images/live-妖精/1.jpg", type: "image", recommendedRatio: "16:9", objectPosition: "center", sortOrder: 2 },
-    { id: "featured-live", label: "钟薛高直播视觉", src: "assets/images/live-钟薛高/1.jpg", type: "image", recommendedRatio: "16:9", objectPosition: "center", sortOrder: 3 },
-    { id: "featured-summer", label: "钟薛高夏日项目", src: "assets/images/电商-化妆品/0.jpg", type: "image", recommendedRatio: "16:9", objectPosition: "center", sortOrder: 4 },
-    { id: "elf-detail-hero", label: "妖精的口袋正文图", src: "assets/images/live-妖精/1.jpg", type: "image", recommendedRatio: "16:9", objectPosition: "center", sortOrder: 5 },
+  "assets": [
+    {
+      "id": "asset-assets-images-0-jpg",
+      "label": "0.jpg",
+      "src": "assets/images/0.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 1,
+      "manifestVersion": "1791832949547-659403"
+    },
+    {
+      "id": "asset-assets-images-1-1-jpg",
+      "label": "1-1.jpg",
+      "src": "assets/images/1-1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 2,
+      "manifestVersion": "1791832949563-258787"
+    },
+    {
+      "id": "asset-assets-images-1-2-jpg",
+      "label": "1-2.jpg",
+      "src": "assets/images/1-2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 3,
+      "manifestVersion": "1791832949568-214727"
+    },
+    {
+      "id": "asset-assets-images-1-3-jpg",
+      "label": "1-3.jpg",
+      "src": "assets/images/1-3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 4,
+      "manifestVersion": "1791832949574-299011"
+    },
+    {
+      "id": "asset-assets-images-1-4-jpg",
+      "label": "1-4.jpg",
+      "src": "assets/images/1-4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 5,
+      "manifestVersion": "1791832949580-330106"
+    },
+    {
+      "id": "asset-assets-images-1-5-jpg",
+      "label": "1-5.jpg",
+      "src": "assets/images/1-5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 6,
+      "manifestVersion": "1791832949585-239592"
+    },
+    {
+      "id": "asset-assets-images-1-6-jpg",
+      "label": "1-6.jpg",
+      "src": "assets/images/1-6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 7,
+      "manifestVersion": "1791832949590-357607"
+    },
+    {
+      "id": "asset-assets-images-1-jpg",
+      "label": "1.jpg",
+      "src": "assets/images/1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 8,
+      "manifestVersion": "1791832066714-930226"
+    },
+    {
+      "id": "asset-assets-images-10-13-mp4",
+      "label": "10月13日.mp4",
+      "src": "assets/images/10月13日.mp4",
+      "type": "video",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 9,
+      "manifestVersion": "1791832085440-3672343"
+    },
+    {
+      "id": "asset-assets-images-11-jpg",
+      "label": "11.jpg",
+      "src": "assets/images/11.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 10,
+      "manifestVersion": "1789302041858-1131238"
+    },
+    {
+      "id": "asset-assets-images-2-1-jpg",
+      "label": "2-1.jpg",
+      "src": "assets/images/2-1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 11,
+      "manifestVersion": "1791832949596-181327"
+    },
+    {
+      "id": "asset-assets-images-2-2-jpg",
+      "label": "2-2.jpg",
+      "src": "assets/images/2-2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 12,
+      "manifestVersion": "1791832949600-308317"
+    },
+    {
+      "id": "asset-assets-images-2-3-jpg",
+      "label": "2-3.jpg",
+      "src": "assets/images/2-3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 13,
+      "manifestVersion": "1791832949605-270250"
+    },
+    {
+      "id": "asset-assets-images-2-4-jpg",
+      "label": "2-4.jpg",
+      "src": "assets/images/2-4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 14,
+      "manifestVersion": "1791832949610-307183"
+    },
+    {
+      "id": "asset-assets-images-2-5-jpg",
+      "label": "2-5.jpg",
+      "src": "assets/images/2-5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 15,
+      "manifestVersion": "1791832949614-319992"
+    },
+    {
+      "id": "asset-assets-images-2-6-jpg",
+      "label": "2-6.jpg",
+      "src": "assets/images/2-6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 16,
+      "manifestVersion": "1791832949618-270460"
+    },
+    {
+      "id": "asset-assets-images-2-7-jpg",
+      "label": "2-7.jpg",
+      "src": "assets/images/2-7.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 17,
+      "manifestVersion": "1791832949623-382397"
+    },
+    {
+      "id": "asset-assets-images-2-8-jpg",
+      "label": "2-8.jpg",
+      "src": "assets/images/2-8.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 18,
+      "manifestVersion": "1791832949627-188815"
+    },
+    {
+      "id": "asset-assets-images-2-jpg",
+      "label": "2.jpg",
+      "src": "assets/images/2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 19,
+      "manifestVersion": "1791832069286-704356"
+    },
+    {
+      "id": "asset-assets-images-3-jpg",
+      "label": "3.jpg",
+      "src": "assets/images/3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 20,
+      "manifestVersion": "1791832070493-550468"
+    },
+    {
+      "id": "asset-assets-images-4-jpg",
+      "label": "4.jpg",
+      "src": "assets/images/4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 21,
+      "manifestVersion": "1791832071438-807646"
+    },
+    {
+      "id": "asset-assets-images-5-jpg",
+      "label": "5.jpg",
+      "src": "assets/images/5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 22,
+      "manifestVersion": "1791832072739-752907"
+    },
+    {
+      "id": "asset-assets-images-6-jpg",
+      "label": "6.jpg",
+      "src": "assets/images/6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 23,
+      "manifestVersion": "1791832073683-739499"
+    },
+    {
+      "id": "asset-assets-images-7-jpg",
+      "label": "7.jpg",
+      "src": "assets/images/7.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 24,
+      "manifestVersion": "1791832074644-892506"
+    },
+    {
+      "id": "asset-assets-images-8-jpg",
+      "label": "8.jpg",
+      "src": "assets/images/8.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 25,
+      "manifestVersion": "1791832076051-632324"
+    },
+    {
+      "id": "featured-summer",
+      "label": "0.jpg",
+      "src": "assets/images/电商-化妆品/0.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "objectPosition": "center",
+      "sortOrder": 26,
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "manifestVersion": "1791131850394-659403"
+    },
+    {
+      "id": "asset-assets-images-1-1-jpg",
+      "label": "1-1.jpg",
+      "src": "assets/images/电商-化妆品/1-1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 27,
+      "manifestVersion": "1791131850723-258787"
+    },
+    {
+      "id": "asset-assets-images-1-2-jpg",
+      "label": "1-2.jpg",
+      "src": "assets/images/电商-化妆品/1-2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 28,
+      "manifestVersion": "1791131851053-214727"
+    },
+    {
+      "id": "asset-assets-images-1-3-jpg",
+      "label": "1-3.jpg",
+      "src": "assets/images/电商-化妆品/1-3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 29,
+      "manifestVersion": "1791131851355-299011"
+    },
+    {
+      "id": "asset-assets-images-1-4-jpg",
+      "label": "1-4.jpg",
+      "src": "assets/images/电商-化妆品/1-4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 30,
+      "manifestVersion": "1791131851711-330106"
+    },
+    {
+      "id": "asset-assets-images-1-5-jpg",
+      "label": "1-5.jpg",
+      "src": "assets/images/电商-化妆品/1-5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 31,
+      "manifestVersion": "1791131852045-239592"
+    },
+    {
+      "id": "asset-assets-images-1-6-jpg",
+      "label": "1-6.jpg",
+      "src": "assets/images/电商-化妆品/1-6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 32,
+      "manifestVersion": "1791131852366-357607"
+    },
+    {
+      "id": "asset-assets-images-2-1-jpg",
+      "label": "2-1.jpg",
+      "src": "assets/images/电商-化妆品/2-1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 33,
+      "manifestVersion": "1791131852705-181327"
+    },
+    {
+      "id": "asset-assets-images-2-2-jpg",
+      "label": "2-2.jpg",
+      "src": "assets/images/电商-化妆品/2-2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 34,
+      "manifestVersion": "1791131853089-308317"
+    },
+    {
+      "id": "asset-assets-images-2-3-jpg",
+      "label": "2-3.jpg",
+      "src": "assets/images/电商-化妆品/2-3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 35,
+      "manifestVersion": "1791131854079-270250"
+    },
+    {
+      "id": "asset-assets-images-2-4-jpg",
+      "label": "2-4.jpg",
+      "src": "assets/images/电商-化妆品/2-4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 36,
+      "manifestVersion": "1791131853778-307183"
+    },
+    {
+      "id": "asset-assets-images-2-5-jpg",
+      "label": "2-5.jpg",
+      "src": "assets/images/电商-化妆品/2-5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 37,
+      "manifestVersion": "1791131854386-319992"
+    },
+    {
+      "id": "asset-assets-images-2-6-jpg",
+      "label": "2-6.jpg",
+      "src": "assets/images/电商-化妆品/2-6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 38,
+      "manifestVersion": "1791131854676-270460"
+    },
+    {
+      "id": "asset-assets-images-2-7-jpg",
+      "label": "2-7.jpg",
+      "src": "assets/images/电商-化妆品/2-7.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 39,
+      "manifestVersion": "1791131853451-382397"
+    },
+    {
+      "id": "asset-assets-images-2-8-jpg",
+      "label": "2-8.jpg",
+      "src": "assets/images/电商-化妆品/2-8.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 40,
+      "manifestVersion": "1791131854953-188815"
+    },
+    {
+      "id": "asset-assets-images-IP-01-png",
+      "label": "01 .png",
+      "src": "assets/images/人 IP/01 .png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 41,
+      "manifestVersion": "1793037447004-79745"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "暗色全身办公版.png",
+      "src": "assets/images/人 IP/暗色全身办公版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 42,
+      "manifestVersion": "1787124103500-1755846"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "封面.png",
+      "src": "assets/images/人 IP/封面.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 43,
+      "manifestVersion": "1787124103402-5435697"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "宽屏暗色办公室版.png",
+      "src": "assets/images/人 IP/宽屏暗色办公室版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 44,
+      "manifestVersion": "1787124103468-1289705"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "蓝色办公平衡版.png",
+      "src": "assets/images/人 IP/蓝色办公平衡版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 45,
+      "manifestVersion": "1787124103483-1480402"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "蓝色近景图标版.png",
+      "src": "assets/images/人 IP/蓝色近景图标版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 46,
+      "manifestVersion": "1787124103494-1599051"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "蓝色柔遮罩首屏版.png",
+      "src": "assets/images/人 IP/蓝色柔遮罩首屏版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 47,
+      "manifestVersion": "1787124103473-1363262"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "蓝色首屏留白版.png",
+      "src": "assets/images/人 IP/蓝色首屏留白版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 48,
+      "manifestVersion": "1787124103464-1350545"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "暖光近景设计师.png",
+      "src": "assets/images/人 IP/暖光近景设计师.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 49,
+      "manifestVersion": "1787124103487-1564595"
+    },
+    {
+      "id": "asset-assets-images-IP-png",
+      "label": "深色渐隐首屏版.png",
+      "src": "assets/images/人 IP/深色渐隐首屏版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 50,
+      "manifestVersion": "1787124103479-2499519"
+    },
+    {
+      "id": "asset-assets-images-IP-ChatGPT-Image-2026-5-25-16-04-21-png",
+      "label": "ChatGPT Image 2026年5月25日 16_04_21.png",
+      "src": "assets/images/人 IP/ChatGPT Image 2026年5月25日 16_04_21.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 51,
+      "manifestVersion": "1787124103717-1581070"
+    },
+    {
+      "id": "asset-assets-images-BJ-png",
+      "label": "宽屏暗色办公室版.png",
+      "src": "assets/images/首- BJ/宽屏暗色办公室版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 52,
+      "manifestVersion": "1782111324518-1289705"
+    },
+    {
+      "id": "home-hero-clean",
+      "label": "蓝色首屏留白版.png",
+      "src": "assets/images/首- BJ/蓝色首屏留白版.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "objectPosition": "center",
+      "sortOrder": 53,
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "manifestVersion": "1782669561436-1350545"
+    },
+    {
+      "id": "asset-assets-images-BJ-png",
+      "label": "暖光近景设计师.png",
+      "src": "assets/images/首- BJ/暖光近景设计师.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 54,
+      "manifestVersion": "1781790748846-1564595"
+    },
+    {
+      "id": "asset-assets-images-jpg",
+      "label": "蓝色 招商 拷贝.jpg",
+      "src": "assets/images/营销-红人/蓝色 招商 拷贝.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 55,
+      "manifestVersion": "1792870694199-615796"
+    },
+    {
+      "id": "asset-assets-images-jpg",
+      "label": "蓝色 招商.jpg",
+      "src": "assets/images/营销-红人/蓝色 招商.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 56,
+      "manifestVersion": "1792870694042-616571"
+    },
+    {
+      "id": "asset-assets-images-jpg",
+      "label": "曲岑今益堂.jpg",
+      "src": "assets/images/营销-红人/曲岑今益堂.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 57,
+      "manifestVersion": "1792870693886-559739"
+    },
+    {
+      "id": "asset-assets-images-jpg",
+      "label": "首图.jpg",
+      "src": "assets/images/营销-红人/首图.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 58,
+      "manifestVersion": "1792870694299-475613"
+    },
+    {
+      "id": "asset-assets-images-1-jpg",
+      "label": "张-1.jpg",
+      "src": "assets/images/营销-红人/张-1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 59,
+      "manifestVersion": "1792870692948-691726"
+    },
+    {
+      "id": "asset-assets-images-2-2-jpg",
+      "label": "张-2 拷贝 2.jpg",
+      "src": "assets/images/营销-红人/张-2 拷贝 2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 60,
+      "manifestVersion": "1792870693723-585844"
+    },
+    {
+      "id": "asset-assets-images-2-jpg",
+      "label": "张-2 拷贝.jpg",
+      "src": "assets/images/营销-红人/张-2 拷贝.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 61,
+      "manifestVersion": "1792870693283-512436"
+    },
+    {
+      "id": "asset-assets-images-2-jpg",
+      "label": "张-2.jpg",
+      "src": "assets/images/营销-红人/张-2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 62,
+      "manifestVersion": "1792870693125-673530"
+    },
+    {
+      "id": "asset-assets-images-Marketing-Visuals-1-jpg",
+      "label": "Marketing Visuals 1 拷贝.jpg",
+      "src": "assets/images/营销-红人/Marketing Visuals 1 拷贝.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 63,
+      "manifestVersion": "1792870692763-180663"
+    },
+    {
+      "id": "asset-assets-images-Marketing-Visuals-1-jpg",
+      "label": "Marketing Visuals 1.jpg",
+      "src": "assets/images/营销-红人/Marketing Visuals 1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 64,
+      "manifestVersion": "1792870692475-926800"
+    },
+    {
+      "id": "asset-assets-images-2-2-jpg",
+      "label": "2 拷贝 2.jpg",
+      "src": "assets/images/营销-长图/2 拷贝 2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 65,
+      "manifestVersion": "1792167603390-775502"
+    },
+    {
+      "id": "asset-assets-images-2-3-jpg",
+      "label": "2 拷贝 3.jpg",
+      "src": "assets/images/营销-长图/2 拷贝 3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 66,
+      "manifestVersion": "1792167601824-940896"
+    },
+    {
+      "id": "asset-assets-images-2-4-jpg",
+      "label": "2 拷贝 4.jpg",
+      "src": "assets/images/营销-长图/2 拷贝 4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 67,
+      "manifestVersion": "1792167602211-950442"
+    },
+    {
+      "id": "asset-assets-images-2-5-jpg",
+      "label": "2 拷贝 5.jpg",
+      "src": "assets/images/营销-长图/2 拷贝 5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 68,
+      "manifestVersion": "1792167602576-937412"
+    },
+    {
+      "id": "asset-assets-images-2-jpg",
+      "label": "2 拷贝.jpg",
+      "src": "assets/images/营销-长图/2 拷贝.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 69,
+      "manifestVersion": "1792167603792-1074155"
+    },
+    {
+      "id": "asset-assets-images-2-jpg",
+      "label": "2.jpg",
+      "src": "assets/images/营销-长图/2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 70,
+      "manifestVersion": "1792167601401-956390"
+    },
+    {
+      "id": "asset-assets-images-5-jpg",
+      "label": "5.jpg",
+      "src": "assets/images/营销-长图/5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 71,
+      "manifestVersion": "1792167602950-1282527"
+    },
+    {
+      "id": "asset-assets-images-jpg",
+      "label": "首图.jpg",
+      "src": "assets/images/营销-长图/首图.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 72,
+      "manifestVersion": "1792167604170-585928"
+    },
+    {
+      "id": "asset-assets-images-Marketing-Visuals-jpg",
+      "label": "Marketing Visuals 拷贝.jpg",
+      "src": "assets/images/营销-长图/Marketing Visuals 拷贝.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 73,
+      "manifestVersion": "1792167600873-1465979"
+    },
+    {
+      "id": "asset-assets-images-Marketing-Visuals-jpg",
+      "label": "Marketing Visuals.jpg",
+      "src": "assets/images/营销-长图/Marketing Visuals.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 74,
+      "manifestVersion": "1792167600263-1233025"
+    },
+    {
+      "id": "type-cover",
+      "label": "11.jpg",
+      "src": "assets/images/Brand-pandajojo/11.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "objectPosition": "center",
+      "sortOrder": 75,
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "manifestVersion": "1789300212734-1131238"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-01-jpg",
+      "label": "pandajojo 2  -01.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -01.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 76,
+      "manifestVersion": "1789305543757-1949200"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-02-jpg",
+      "label": "pandajojo 2  -02.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -02.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 77,
+      "manifestVersion": "1789305543912-665093"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-03-jpg",
+      "label": "pandajojo 2  -03.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -03.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 78,
+      "manifestVersion": "1789305544053-1637304"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-04-jpg",
+      "label": "pandajojo 2  -04.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -04.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 79,
+      "manifestVersion": "1789305544220-3806503"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-05-jpg",
+      "label": "pandajojo 2  -05.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -05.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 80,
+      "manifestVersion": "1789305544367-2603185"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-06-jpg",
+      "label": "pandajojo 2  -06.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -06.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 81,
+      "manifestVersion": "1789305544520-3316528"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-07-jpg",
+      "label": "pandajojo 2  -07.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -07.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 82,
+      "manifestVersion": "1789305544671-2641079"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-08-jpg",
+      "label": "pandajojo 2  -08.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -08.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 83,
+      "manifestVersion": "1789305544844-2947470"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-09-jpg",
+      "label": "pandajojo 2  -09.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -09.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 84,
+      "manifestVersion": "1789305545016-2950221"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-10-jpg",
+      "label": "pandajojo 2  -10.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -10.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 85,
+      "manifestVersion": "1789305545180-1497344"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-11-jpg",
+      "label": "pandajojo 2  -11.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -11.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 86,
+      "manifestVersion": "1789305545328-1972405"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-12-jpg",
+      "label": "pandajojo 2  -12.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -12.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 87,
+      "manifestVersion": "1789305545487-3107569"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-13-jpg",
+      "label": "pandajojo 2  -13.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -13.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 88,
+      "manifestVersion": "1789305545681-3394805"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-14-jpg",
+      "label": "pandajojo 2  -14.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -14.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 89,
+      "manifestVersion": "1789305546007-9026060"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-15-jpg",
+      "label": "pandajojo 2  -15.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -15.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 90,
+      "manifestVersion": "1789305546157-2795431"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-16-jpg",
+      "label": "pandajojo 2  -16.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -16.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 91,
+      "manifestVersion": "1789305546310-2758129"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-17-jpg",
+      "label": "pandajojo 2  -17.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -17.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 92,
+      "manifestVersion": "1789305546455-2965490"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-18-jpg",
+      "label": "pandajojo 2  -18.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -18.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 93,
+      "manifestVersion": "1789305546643-1856711"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-19-jpg",
+      "label": "pandajojo 2  -19.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -19.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 94,
+      "manifestVersion": "1789305546812-2742657"
+    },
+    {
+      "id": "asset-assets-images-Brand-pandajojo-pandajojo-2-20-jpg",
+      "label": "pandajojo 2  -20.jpg",
+      "src": "assets/images/Brand-pandajojo/pandajojo 2  -20.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 95,
+      "manifestVersion": "1789305546892-1133814"
+    },
+    {
+      "id": "asset-assets-images-DC-26-M-49-webp",
+      "label": "26- 作品集 M-49.webp",
+      "src": "assets/images/DC-云南白药/26- 作品集 M-49.webp",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 96,
+      "manifestVersion": "1787124103413-1087410"
+    },
+    {
+      "id": "asset-assets-images-DC-26-M-50-webp",
+      "label": "26- 作品集 M-50.webp",
+      "src": "assets/images/DC-云南白药/26- 作品集 M-50.webp",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 97,
+      "manifestVersion": "1787124103439-255282"
+    },
+    {
+      "id": "asset-assets-images-DC-26-M-51-webp",
+      "label": "26- 作品集 M-51.webp",
+      "src": "assets/images/DC-云南白药/26- 作品集 M-51.webp",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 98,
+      "manifestVersion": "1787124103445-1719442"
+    },
+    {
+      "id": "asset-assets-images-DC-26-M-66-webp",
+      "label": "26- 作品集 M-66.webp",
+      "src": "assets/images/DC-云南白药/26- 作品集 M-66.webp",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 99,
+      "manifestVersion": "1787124103425-5276048"
+    },
+    {
+      "id": "asset-assets-images-DC-png",
+      "label": "封面.png",
+      "src": "assets/images/DC-云南白药/封面.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 100,
+      "manifestVersion": "1784644635692-5435697"
+    },
+    {
+      "id": "asset-assets-images-DC-png",
+      "label": "缩略图.png",
+      "src": "assets/images/DC-云南白药/缩略图.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 101,
+      "manifestVersion": "1787124103459-3624775"
+    },
+    {
+      "id": "featured-brand",
+      "label": "1.jpg",
+      "src": "assets/images/live-妖精/1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "objectPosition": "center",
+      "sortOrder": 102,
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "manifestVersion": "1787129296200-2668719"
+    },
+    {
+      "id": "asset-assets-images-live-2-jpg",
+      "label": "2.jpg",
+      "src": "assets/images/live-妖精/2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 103,
+      "manifestVersion": "1787129296026-8308200"
+    },
+    {
+      "id": "asset-assets-images-live-3-jpg",
+      "label": "3 拷贝.jpg",
+      "src": "assets/images/live-妖精/3 拷贝.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 104,
+      "manifestVersion": "1787132870235-846547"
+    },
+    {
+      "id": "asset-assets-images-live-3-jpg",
+      "label": "3.jpg",
+      "src": "assets/images/live-妖精/3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 105,
+      "manifestVersion": "1787129297017-1977423"
+    },
+    {
+      "id": "asset-assets-images-live-4-jpg",
+      "label": "4.jpg",
+      "src": "assets/images/live-妖精/4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 106,
+      "manifestVersion": "1787129297265-4010616"
+    },
+    {
+      "id": "asset-assets-images-live-5-jpg",
+      "label": "5.jpg",
+      "src": "assets/images/live-妖精/5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 107,
+      "manifestVersion": "1787129298313-1769606"
+    },
+    {
+      "id": "asset-assets-images-live-6-jpg",
+      "label": "6.jpg",
+      "src": "assets/images/live-妖精/6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 108,
+      "manifestVersion": "1787129297527-3945973"
+    },
+    {
+      "id": "asset-assets-images-live-7-jpg",
+      "label": "7.jpg",
+      "src": "assets/images/live-妖精/7.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 109,
+      "manifestVersion": "1787129298473-1915720"
+    },
+    {
+      "id": "asset-assets-images-live-images-2-01-jpg",
+      "label": "2_01.jpg",
+      "src": "assets/images/live-妖精/images/2_01.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 110,
+      "manifestVersion": "1787124367947-2963098"
+    },
+    {
+      "id": "asset-assets-images-live-images-2-02-jpg",
+      "label": "2_02.jpg",
+      "src": "assets/images/live-妖精/images/2_02.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 111,
+      "manifestVersion": "1787124368092-3068989"
+    },
+    {
+      "id": "asset-assets-images-live-images-2-03-jpg",
+      "label": "2_03.jpg",
+      "src": "assets/images/live-妖精/images/2_03.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 112,
+      "manifestVersion": "1787124368265-3545325"
+    },
+    {
+      "id": "featured-live",
+      "label": "1.jpg",
+      "src": "assets/images/live-钟薛高/1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "objectPosition": "center",
+      "sortOrder": 113,
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "manifestVersion": "1791828244392-930226"
+    },
+    {
+      "id": "asset-assets-images-live-10-13-mp4",
+      "label": "10月13日.mp4",
+      "src": "assets/images/live-钟薛高/10月13日.mp4",
+      "type": "video",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 114,
+      "manifestVersion": "1791830792949-3672343"
+    },
+    {
+      "id": "asset-assets-images-live-2-jpg",
+      "label": "2.jpg",
+      "src": "assets/images/live-钟薛高/2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 115,
+      "manifestVersion": "1791828244713-704356"
+    },
+    {
+      "id": "asset-assets-images-live-3-jpg",
+      "label": "3.jpg",
+      "src": "assets/images/live-钟薛高/3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 116,
+      "manifestVersion": "1791828245028-550468"
+    },
+    {
+      "id": "asset-assets-images-live-4-jpg",
+      "label": "4.jpg",
+      "src": "assets/images/live-钟薛高/4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 117,
+      "manifestVersion": "1791828245363-807646"
+    },
+    {
+      "id": "asset-assets-images-live-5-jpg",
+      "label": "5.jpg",
+      "src": "assets/images/live-钟薛高/5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 118,
+      "manifestVersion": "1791828245698-752907"
+    },
+    {
+      "id": "asset-assets-images-live-6-jpg",
+      "label": "6.jpg",
+      "src": "assets/images/live-钟薛高/6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 119,
+      "manifestVersion": "1791828246015-739499"
+    },
+    {
+      "id": "asset-assets-images-live-7-jpg",
+      "label": "7.jpg",
+      "src": "assets/images/live-钟薛高/7.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 120,
+      "manifestVersion": "1791828246302-892506"
+    },
+    {
+      "id": "asset-assets-images-live-8-jpg",
+      "label": "8.jpg",
+      "src": "assets/images/live-钟薛高/8.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 121,
+      "manifestVersion": "1791828246549-632324"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-1-2-jpg",
+      "label": "1 拷贝 2.jpg",
+      "src": "assets/images/live-chabaidao/1 拷贝 2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 122,
+      "manifestVersion": "1791136103538-456300"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-1-jpg",
+      "label": "1.jpg",
+      "src": "assets/images/live-chabaidao/1.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 123,
+      "manifestVersion": "1789743033677-390067"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-10-jpg",
+      "label": "10.jpg",
+      "src": "assets/images/live-chabaidao/10.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 124,
+      "manifestVersion": "1789743034132-671025"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-2-jpg",
+      "label": "2.jpg",
+      "src": "assets/images/live-chabaidao/2.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 125,
+      "manifestVersion": "1789743033743-422894"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-3-jpg",
+      "label": "3.jpg",
+      "src": "assets/images/live-chabaidao/3.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 126,
+      "manifestVersion": "1789743033817-193950"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-4-jpg",
+      "label": "4.jpg",
+      "src": "assets/images/live-chabaidao/4.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 127,
+      "manifestVersion": "1789743034374-631739"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-5-jpg",
+      "label": "5.jpg",
+      "src": "assets/images/live-chabaidao/5.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 128,
+      "manifestVersion": "1789743033903-374447"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-6-jpg",
+      "label": "6.jpg",
+      "src": "assets/images/live-chabaidao/6.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 129,
+      "manifestVersion": "1789743033977-334993"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-7-jpg",
+      "label": "7.jpg",
+      "src": "assets/images/live-chabaidao/7.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 130,
+      "manifestVersion": "1789743034202-315874"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-8-jpg",
+      "label": "8.jpg",
+      "src": "assets/images/live-chabaidao/8.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 131,
+      "manifestVersion": "1789743034274-327744"
+    },
+    {
+      "id": "asset-assets-images-live-chabaidao-9-jpg",
+      "label": "9.jpg",
+      "src": "assets/images/live-chabaidao/9.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 132,
+      "manifestVersion": "1789743034044-330285"
+    },
+    {
+      "id": "asset-assets-images-live-zunbao-25-22-jpg",
+      "label": "25- 作品集-22.jpg",
+      "src": "assets/images/live-zunbao/25- 作品集-22.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 133,
+      "manifestVersion": "1787124103378-2984164"
+    },
+    {
+      "id": "asset-assets-images-live-zunbao-25-23-jpg",
+      "label": "25- 作品集-23.jpg",
+      "src": "assets/images/live-zunbao/25- 作品集-23.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 134,
+      "manifestVersion": "1787124103350-3041801"
+    },
+    {
+      "id": "asset-assets-images-live-zunbao-25-24-jpg",
+      "label": "25- 作品集-24.jpg",
+      "src": "assets/images/live-zunbao/25- 作品集-24.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 135,
+      "manifestVersion": "1787124103390-3831118"
+    },
+    {
+      "id": "asset-assets-images-live-zunbao-25-25-jpg",
+      "label": "25- 作品集-25.jpg",
+      "src": "assets/images/live-zunbao/25- 作品集-25.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 136,
+      "manifestVersion": "1761142356367-1671757"
+    },
+    {
+      "id": "asset-assets-images-live-zunbao-25-26-jpg",
+      "label": "25- 作品集-26.jpg",
+      "src": "assets/images/live-zunbao/25- 作品集-26.jpg",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 137,
+      "manifestVersion": "1761142356534-1804306"
+    },
+    {
+      "id": "asset-assets-images-reference-intro-designer-png",
+      "label": "intro-designer.png",
+      "src": "assets/images/reference/intro-designer.png",
+      "type": "image",
+      "recommendedRatio": "16:9",
+      "cropX": 50,
+      "cropY": 50,
+      "cropOffsetX": 0,
+      "cropOffsetY": 0,
+      "zoom": 1,
+      "sortOrder": 138,
+      "manifestVersion": "1793034844851-1583248"
+    }
   ]
 };
