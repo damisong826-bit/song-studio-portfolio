@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Song Studio / Visual Editor</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <section class="login-gate" data-login-gate>
+      <form class="login-card" data-login-form>
+        <p>Song Studio Editor</p>
+        <h1>进入后台编辑</h1>
+        <label>
+          <span>请输入密码</span>
+          <input type="password" autocomplete="current-password" data-login-password />
+        </label>
+        <button type="submit">进入编辑台</button>
+        <em data-login-error></em>
+      </form>
+    </section>
+
+    <main class="editor-shell">
+      <aside class="editor-nav">
+        <a class="editor-brand" href="index.html">
+          <i aria-hidden="true"></i>
+          <span>Song Studio</span>
+        </a>
+        <nav aria-label="后台功能">
+          <button class="active" type="button" data-view="site">全站</button>
+          <button type="button" data-view="home">首页</button>
+          <button type="button" data-view="projects">项目</button>
+          <button type="button" data-view="images">图片</button>
+          <button type="button" data-view="footer">尾屏</button>
+          <button type="button" data-view="type">字体</button>
+        </nav>
+      </aside>
+
+      <section class="editor-main">
+        <header class="editor-top">
+          <div>
+            <h1 data-view-title>全站设置</h1>
+          </div>
+          <div class="top-actions">
+            <span data-status>当前无未保存更改</span>
+            <span data-project-data-source>项目数据来源：检查中</span>
+            <button type="button" data-action="export-project-config">导出项目配置</button>
+            <button type="button" data-action="save">保存</button>
+            <a href="index.html" target="_blank" rel="noreferrer">查看首页 ↗</a>
+          </div>
+        </header>
+
+        <section class="editor-grid">
+          <div class="edit-panel" data-edit-panel></div>
+        </section>
+      </section>
+    </main>
+
+    <div class="media-modal" data-media-modal hidden>
+      <div class="media-dialog" role="dialog" aria-modal="true" aria-label="图片选择与裁切">
+        <header class="media-head">
+          <div>
+            <p>Image Slot</p>
+            <h2 data-media-title>更换图片</h2>
+          </div>
+          <button class="media-close" type="button" data-close-media aria-label="关闭图片编辑">×</button>
+        </header>
+        <div class="media-body" data-media-body></div>
+      </div>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

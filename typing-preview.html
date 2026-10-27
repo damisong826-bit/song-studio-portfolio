@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Typing Preview</title>
+    <style>
+      :root {
+        --bg: #020817;
+        --ink: #ffffff;
+        --blue: #1774ff;
+        --muted: rgba(247, 248, 252, .64);
+        --page-pad: clamp(36px, 8vw, 120px);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 72% 24%, rgba(23, 116, 255, .18), transparent 32%),
+          linear-gradient(180deg, #040b1c 0%, var(--bg) 100%);
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        align-content: center;
+        gap: 34px;
+        padding: 56px var(--page-pad);
+      }
+
+      .typing-title {
+        position: relative;
+        width: min(760px, 70vw);
+        margin: 0;
+        color: var(--ink);
+        font-size: clamp(40px, 6.2vw, 72px);
+        font-weight: 560;
+        line-height: 1.16;
+        letter-spacing: 0;
+        text-align: left;
+      }
+
+      .typing-title span {
+        white-space: normal;
+      }
+
+      .typing-space {
+        visibility: hidden;
+      }
+
+      .typing-live {
+        position: absolute;
+        inset: 0 auto auto 0;
+        white-space: pre-wrap;
+      }
+
+      .typing-cursor {
+        display: inline-block;
+        width: 2px;
+        height: .86em;
+        margin-left: .05em;
+        background: currentColor;
+        vertical-align: -.08em;
+        animation: blink .78s steps(1, end) infinite;
+      }
+
+      .typing-cursor.is-hidden {
+        display: none;
+      }
+
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      button {
+        min-height: 38px;
+        padding: 0 15px;
+        border: 1px solid rgba(255, 255, 255, .18);
+        border-radius: 999px;
+        color: var(--ink);
+        background: rgba(255, 255, 255, .08);
+        font: 700 13px/1 Inter, Arial, sans-serif;
+        cursor: pointer;
+      }
+
+      button:hover,
+      button:focus-visible {
+        border-color: rgba(23, 116, 255, .7);
+        background: rgba(23, 116, 255, .2);
+        outline: none;
+      }
+
+      .speed-label {
+        align-self: center;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 650;
+      }
+
+      @keyframes blink {
+        0%, 49% {
+          opacity: 1;
+        }
+        50%, 100% {
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .typing-title {
+          width: 100%;
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="typing-title" aria-label="Creative design for real bread kneaders">
+        <span class="typing-space">Creative design for real bread kneaders</span>
+        <span class="typing-live" aria-hidden="true"></span>
+      </h1>
+      <div class="controls" aria-label="typing controls">
+        <button type="button" data-action="replay">重新播放</button>
+        <button type="button" data-action="slower">慢一点</button>
+        <button type="button" data-action="faster">快一点</button>
+        <span class="speed-label" data-speed-label>40ms / 字符</span>
+      </div>
+    </main>
+
+    <script>
+      (() => {
+        const text = "Creative design for real bread kneaders";
+        const live = document.querySelector(".typing-live");
+        const speedLabel = document.querySelector("[data-speed-label]");
+        let speed = 40;
+        let timer = 0;
+
+        function setSpeedLabel() {
+          speedLabel.textContent = `${speed}ms / 字符`;
+        }
+
+        function replay() {
+          window.clearTimeout(timer);
+          live.textContent = "";
+          const cursor = document.createElement("span");
+          cursor.className = "typing-cursor";
+          live.appendChild(cursor);
+
+          let index = 0;
+          const tick = () => {
+            if (index >= text.length) {
+              cursor.classList.add("is-hidden");
+              return;
+            }
+            cursor.before(document.createTextNode(text[index]));
+            index += 1;
+            timer = window.setTimeout(tick, speed);
+          };
+
+          timer = window.setTimeout(tick, 200);
+        }
+
+        document.querySelector("[data-action='replay']").addEventListener("click", replay);
+        document.querySelector("[data-action='slower']").addEventListener("click", () => {
+          speed = Math.min(90, speed + 5);
+          setSpeedLabel();
+          replay();
+        });
+        document.querySelector("[data-action='faster']").addEventListener("click", () => {
+          speed = Math.max(20, speed - 5);
+          setSpeedLabel();
+          replay();
+        });
+
+        setSpeedLabel();
+        replay();
+      })();
+    </script>
+  </body>
+</html>
